@@ -1,10 +1,8 @@
-/* ============================================================
-   IPDA GRALHA AZUL — script.js
-   ============================================================ */
+
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    // ── MENU HAMBURGUER (mobile) ────────────────────────────
+   
     const menuToggle = document.getElementById('menu-toggle');
     const navMenu    = document.getElementById('nav-menu');
 
@@ -17,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
             );
         });
 
-        // Fecha o menu ao clicar em qualquer link
+       
         navMenu.querySelectorAll('.nav-link').forEach(function (link) {
             link.addEventListener('click', function () {
                 navMenu.classList.remove('aberto');
@@ -25,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
 
-        // Fecha ao clicar fora do menu
+       
         document.addEventListener('click', function (e) {
             if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
                 navMenu.classList.remove('aberto');
@@ -34,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // ── ANIMAÇÃO FADE-IN AO ROLAR ──────────────────────────
+   
     const elementosFade = document.querySelectorAll('.fade-in');
 
     if ('IntersectionObserver' in window) {
@@ -57,13 +55,13 @@ document.addEventListener('DOMContentLoaded', function () {
             observador.observe(el);
         });
     } else {
-        // Fallback para navegadores mais antigos — mostra tudo
+       
         elementosFade.forEach(function (el) {
             el.classList.add('visivel');
         });
     }
 
-    // ── DESTAQUE DE LINK DE NAV AO ROLAR ──────────────────
+    
     const secoes   = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-link');
 
@@ -89,6 +87,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     window.addEventListener('scroll', destacarNavLink, { passive: true });
-    destacarNavLink(); // roda na carga
+    destacarNavLink(); 
 
 });

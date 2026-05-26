@@ -1,9 +1,4 @@
-/* ============================================================
-   IPDA GRALHA AZUL — style.css
-   Design: elegante, legível, sofisticado para público 30+
-   ============================================================ */
 
-/* ── VARIÁVEIS ─────────────────────────────────────────────── */
 :root {
     --azul:         #1a3a6b;
     --azul-medio:   #2a5298;
@@ -26,7 +21,6 @@
     --transicao:    0.3s ease;
 }
 
-/* ── RESET & BASE ───────────────────────────────────────────── */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 html { scroll-behavior: smooth; font-size: 17px; }
@@ -44,14 +38,12 @@ img { display: block; max-width: 100%; height: auto; }
 
 address { font-style: normal; }
 
-/* ── CONTAINER ──────────────────────────────────────────────── */
 .container {
     max-width: 1080px;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
-/* ── BOTÕES ─────────────────────────────────────────────────── */
 .btn {
     display: inline-block;
     padding: 0.9rem 2.2rem;
@@ -86,7 +78,6 @@ address { font-style: normal; }
     color: var(--branco);
 }
 
-/* ── CABEÇALHO ──────────────────────────────────────────────── */
 .cabecalho {
     position: sticky;
     top: 0;
@@ -132,7 +123,6 @@ address { font-style: normal; }
     background-color: var(--azul-claro);
 }
 
-/* Hamburguer */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -151,7 +141,6 @@ address { font-style: normal; }
     transition: all var(--transicao);
 }
 
-/* ── HERO ───────────────────────────────────────────────────── */
 .hero {
     position: relative;
     min-height: 92vh;
@@ -243,7 +232,6 @@ address { font-style: normal; }
     50%       { transform: translateX(-50%) translateY(8px); opacity: 1; }
 }
 
-/* ── VERSÍCULO BANDA ────────────────────────────────────────── */
 .versiculo-banda {
     background-color: var(--azul);
     padding: 3.5rem 2rem;
@@ -278,7 +266,6 @@ address { font-style: normal; }
     font-style: normal;
 }
 
-/* ── SEÇÕES GERAIS ──────────────────────────────────────────── */
 .secao {
     padding: 6rem 0;
     background-color: var(--branco);
@@ -347,7 +334,6 @@ address { font-style: normal; }
     text-align: center;
 }
 
-/* GRIDS das seções */
 .secao__grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -361,7 +347,6 @@ address { font-style: normal; }
     .secao__grid--invertido .secao__fotos { order: 1; }
 }
 
-/* ── GALERIA DUPLA ──────────────────────────────────────────── */
 .galeria-dupla {
     display: grid;
     grid-template-columns: 1.4fr 1fr;
@@ -393,7 +378,6 @@ address { font-style: normal; }
 
 .galeria-dupla img:hover { transform: scale(1.04); }
 
-/* ── NÚMERO DESTAQUE (História) ─────────────────────────────── */
 .secao__numero-destaque {
     display: flex;
     flex-direction: column;
@@ -424,7 +408,6 @@ address { font-style: normal; }
     line-height: 1.5;
 }
 
-/* ── CARDS DE CULTO ─────────────────────────────────────────── */
 .cultos-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -489,7 +472,6 @@ address { font-style: normal; }
     line-height: 1.5;
 }
 
-/* ── LOCALIZAÇÃO ────────────────────────────────────────────── */
 .localizacao-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -518,7 +500,6 @@ address { font-style: normal; }
 
 .localizacao__mapa iframe { display: block; }
 
-/* ── RODAPÉ ─────────────────────────────────────────────────── */
 .rodape {
     background-color: var(--escuro);
     padding: 3.5rem 2rem;
@@ -553,7 +534,6 @@ address { font-style: normal; }
     color: rgba(255,255,255,0.4);
 }
 
-/* ── ANIMAÇÃO FADE-IN ───────────────────────────────────────── */
 .fade-in {
     opacity: 0;
     transform: translateY(24px);
@@ -564,7 +544,6 @@ address { font-style: normal; }
     transform: translateY(0);
 }
 
-/* ── RESPONSIVO MOBILE ──────────────────────────────────────── */
 @media (max-width: 760px) {
 
     html { font-size: 16px; }
