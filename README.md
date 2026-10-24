@@ -1,8 +1,21 @@
-# ipda
+# IPDA — Igreja Deus é Amor (Vila Gralha Azul)
 
-Projeto front-end (HTML, CSS e JavaScript) — página interativa com estilos elaborados.
+Site institucional da **Igreja Deus é Amor** — Vila Gralha Azul, Ponta Grossa – PR.
 
-## Arquivos
+## Seções
+
+- Hero com versículo e chamada para cultos
+- Nossa Fé
+- História (+10 anos na comunidade)
+- Horários de culto (quarta, quinta, sexta e domingo)
+- Localização com mapa (Rua Lagoa Dourada, 130 — Contorno)
+
+## Tecnologias
+
+- HTML5, CSS3, JavaScript
+- Fontes Google: Playfair Display + Lato
+
+## Estrutura
 
 ```
 ├── index.html
@@ -12,10 +25,9 @@ Projeto front-end (HTML, CSS e JavaScript) — página interativa com estilos el
 
 ## Como visualizar
 
-Abra o `index.html` no navegador ou sirva localmente:
-
 ```bash
 python3 -m http.server 8000
+# http://localhost:8000
 ```
 
 ## Autor
